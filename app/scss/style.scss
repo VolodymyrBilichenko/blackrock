@@ -106,3 +106,145 @@ select {
 }
 
 
+
+
+.header{
+  padding: 12px 0;
+  background: var(--dark-gray);
+
+
+  &__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  img{
+    max-width: 77px;
+  }
+
+  ul{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    text-transform: uppercase;
+  }
+
+  li{
+    font-size: 20px;
+    color: var(--white);
+    transition: all .3s ease;
+
+    &:hover{
+      color: var(--white-opacity-50);
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    li{
+      font-size: 15px;
+    }
+    ul{
+      gap: 10px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    padding: 7px 0;
+    border-bottom: 1px solid var(--white);
+    li{
+      font-size: 6px;
+    }
+    img{
+      max-width: 26px;
+    }
+  }
+}
+
+.banner{
+  background: url(../img/hero-bgd.png) no-repeat;
+  background-size: cover;
+  padding: 255px 0;
+  box-shadow: 0px -7px 8.899999618530273px 0px #000000D1;
+
+  &__inner{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+
+  h1{
+    font-size: 56px;
+    line-height: 72px;
+    color: var(--white);
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+
+    span{
+      line-height: 140px;
+      font-size: 108px;
+    }
+  }
+
+  p{
+    font-size: 20px;
+    line-height: 23px;
+    color: var(--white);
+    text-align: center;
+    max-width: 670px;
+
+    &:last-child{
+      line-height: 35px;
+      margin-top: 30px;
+    }
+  }
+
+  &__video{
+    width: 100%;
+    max-width: 620px;
+    height: 350px;
+    background: var(--black);
+  }
+
+  &__txt{
+    width: 100%;
+  }
+
+  @media screen and (max-width: 1024px) {
+    h1{
+      font-size: 30px;
+      margin-bottom: 18px;
+      line-height: 42px;
+
+      span{
+        font-size: 57px;
+        line-height: 60px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 40px 0 32px;
+    background: url(../img/hero-bgd-mob.png) no-repeat;
+    background-size: cover;
+
+    &__inner{
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    p{
+      font-size: 15px;
+      line-height: 17px;
+      max-width: 500px;
+      margin: 0 auto;
+
+      &:last-child{
+        line-height: 18px;
+        margin-top: 19px;
+      }
+    }
+  }
+}

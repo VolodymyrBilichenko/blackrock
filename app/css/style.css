@@ -275,3 +275,146 @@ textarea {
   clip: rect(0 0 0 0);
   overflow: hidden
 }
+.header {
+  padding: 12px 0;
+  background: var(--dark-gray)
+}
+.header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 30px
+}
+.header img {
+  max-width: 77px
+}
+.header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 35px;
+  text-transform: uppercase
+}
+.header li {
+  font-size: 20px;
+  color: var(--white);
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
+}
+.header li:hover {
+  color: var(--white-opacity-50)
+}
+@media screen and (max-width:992px) {
+  .header li {
+    font-size: 15px
+  }
+  .header ul {
+    gap: 10px
+  }
+}
+@media screen and (max-width:768px) {
+  .header {
+    padding: 7px 0;
+    border-bottom: 1px solid var(--white)
+  }
+  .header li {
+    font-size: 6px
+  }
+  .header img {
+    max-width: 26px
+  }
+}
+.banner {
+  background: url(../img/hero-bgd.png) no-repeat;
+  background-size: cover;
+  padding: 255px 0;
+  -webkit-box-shadow: 0 -7px 8.8999996185px 0 #000000D1;
+  box-shadow: 0 -7px 8.8999996185px 0 #000000D1
+}
+.banner__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 50px
+}
+.banner h1 {
+  font-size: 56px;
+  line-height: 72px;
+  color: var(--white);
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px
+}
+.banner h1 span {
+  line-height: 140px;
+  font-size: 108px
+}
+.banner p {
+  font-size: 20px;
+  line-height: 23px;
+  color: var(--white);
+  text-align: center;
+  max-width: 670px
+}
+.banner p:last-child {
+  line-height: 35px;
+  margin-top: 30px
+}
+.banner__video {
+  width: 100%;
+  max-width: 620px;
+  height: 350px;
+  background: var(--black)
+}
+.banner__txt {
+  width: 100%
+}
+@media screen and (max-width:1024px) {
+  .banner h1 {
+    font-size: 30px;
+    margin-bottom: 18px;
+    line-height: 42px
+  }
+  .banner h1 span {
+    font-size: 57px;
+    line-height: 60px
+  }
+}
+@media screen and (max-width:768px) {
+  .banner {
+    padding: 40px 0 32px;
+    background: url(../img/hero-bgd-mob.png) no-repeat;
+    background-size: cover
+  }
+  .banner__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 30px
+  }
+  .banner p {
+    font-size: 15px;
+    line-height: 17px;
+    max-width: 500px;
+    margin: 0 auto
+  }
+  .banner p:last-child {
+    line-height: 18px;
+    margin-top: 19px
+  }
+}
