@@ -189,16 +189,16 @@ button {
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: Montserrat,sans-serif
+  font-family: Arial,sans-serif
 }
 :root {
-  --container: 1280px;
-  --black: #363636;
-  --blue: #2980B9;
-  --blue-opacity: rgba(203, 234, 255, 0.88);
+  --container: 1340px;
+  --black: #000;
   --white: #FFF;
-  --white-opacity: rgba(255, 255, 255, 0.88);
-  --border: #E0E0E0
+  --white-opacity-15: #FFFFFF26;
+  --white-opacity-50: #FFFFFF80;
+  --dark-gray: #32343F;
+  --green: #00C466
 }
 body {
   margin: 0;
